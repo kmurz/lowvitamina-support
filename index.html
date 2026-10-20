@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support — Low Vitamin A</title>
+<style>
+  :root{--ink:#0F1419;--card:#161D24;--line:#2A353E;--bone:#E8EDF0;--mist:#8496A3;
+    --dim:#5C6B77;--amber:#D9862B;--green:#5E9E86}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ink);color:var(--bone);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  main{max-width:680px;margin:0 auto;padding:56px 22px 80px}
+  h1{font-size:34px;line-height:1.15;margin:0 0 8px;font-weight:600}
+  .sub{color:var(--mist);font-size:15px;margin:0 0 40px}
+  h2{font-size:21px;margin:40px 0 14px;font-weight:600}
+  p,li{color:var(--mist)} strong{color:var(--bone);font-weight:600}
+  ul{padding-left:20px} li{margin-bottom:8px}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    margin-bottom:10px;overflow:hidden}
+  summary{padding:15px 18px;cursor:pointer;color:var(--bone);font-weight:500;list-style:none;
+    display:flex;justify-content:space-between;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--dim);flex:none}
+  details[open] summary::after{content:"\2212"}
+  .body{padding:0 18px 16px;font-size:15px}
+  .body p{margin:0 0 10px} .body p:last-child{margin:0}
+  .notice{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--amber);
+    border-radius:0 12px 12px 0;padding:20px 22px;margin:34px 0}
+  .notice p{margin:0 0 10px} .notice p:last-child{margin:0}
+  a{color:var(--amber)}
+  footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);
+    color:var(--dim);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Support</h1>
+  <p class="sub">Low Vitamin A &middot; a vitamin A tracker that counts preformed retinol and carotenoid separately</p>
+
+  <h2>Common questions</h2>
+
+  <details open>
+    <summary>Why does the app split retinol from carotenoid?</summary>
+    <div class="body">
+      <p>Because they behave differently. <strong>Preformed retinol</strong>
+      &mdash; from liver, fish liver oils, fortified foods, eggs and dairy &mdash;
+      is absorbed efficiently and stored in the liver.
+      <strong>Provitamin A carotenoids</strong> from plants are converted
+      at roughly 12:1 for beta-carotene, and that conversion is regulated.</p>
+      <p>The tolerable upper intake level &mdash; 3,000 mcg a day for adults &mdash;
+      applies to preformed retinol only. Beta-carotene from food does not cause
+      vitamin A toxicity. A single combined number cannot tell you which half you
+      are near the limit on, so the app shows preformed retinol on its own counter.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>A food I eat isn't in the database</summary>
+    <div class="body">
+      <p>Use <strong>Food &rarr; Custom food</strong> to enter values per serving.
+      If you leave the preformed retinol field blank, the whole total is counted as
+      preformed &mdash; the cautious assumption for the upper limit. For packaged
+      and fortified foods, the nutrition label is more accurate than any database.</p>
+      <p>Searches that come back empty are recorded under
+      <strong>More &rarr; Your data</strong> and can be sent in one tap.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Where do the numbers come from?</summary>
+    <div class="body">
+      <p>Food values come from USDA FoodData Central and are checked against it.
+      They are averages and will not match every package, animal or cultivar:
+      fortification varies by brand and country, and dairy and egg yolks vary with feed.</p>
+      <p>Reference intakes and the upper limit come from the Institute of Medicine
+      Dietary Reference Intakes and the EFSA scientific opinion on preformed vitamin A.
+      Every source is linked in the app under <strong>More &rarr; Field notes</strong>.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Which protocol should I choose?</summary>
+    <div class="body">
+      <p><strong>Reference</strong> is the suggested start: the recommended intake
+      (900 mcg RAE a day for men, 700 for women), to see where your intake actually sits.
+      <strong>Upper limit</strong>, <strong>Pregnancy</strong> and <strong>Bone health</strong>
+      add the relevant ceilings on preformed retinol.</p>
+      <p><strong>Reduced intake</strong> and <strong>Stepped reduction</strong> let you go
+      below the reference intake. No clinical guideline specifies a target below the
+      recommended amount, so if you do this, do it with a clinician and with bloodwork.
+      If you are working with a clinician, use <strong>Set my own</strong> for their number.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Why does the app track calcium?</summary>
+    <div class="body">
+      <p>The foods richest in preformed retinol &mdash; dairy and eggs &mdash; are also where
+      most diets get their calcium, so cutting one tends to cut the other by accident.</p>
+      <p>The meal plans show their calcium totals up front. Sardines with bones, chia,
+      almonds, sesame, white beans, calcium-set tofu, fortified plant milks and hard
+      mineral water carry calcium with little or no vitamin A.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>My symptom journal shows nothing useful yet</summary>
+    <div class="body">
+      <p>It needs roughly two weeks of scores before the trend line means
+      anything. The value of the record is retrospective &mdash; when something
+      shifts weeks later, the change markers let you look back and see what you did.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>I'm switching phones / I lost my data</summary>
+    <div class="body">
+      <p>Your data lives only on your phone. Before you switch, use
+      <strong>More &rarr; Your data &rarr; Export JSON</strong> and keep the file &mdash;
+      that is your backup. Deleting the app deletes the data with it.</p>
+      <p>If data is already gone with no export, it cannot be recovered. We are sorry;
+      that is the direct cost of the app holding nothing about you on any server of ours.</p>
+    </div>
+  </details>
+
+  <div class="notice">
+    <p><strong>This app is a food-logging tool, not medical advice.</strong></p>
+    <p>Vitamin A is an essential nutrient, and deficiency causes serious harm.
+    There are real clinical reasons to limit preformed vitamin A &mdash; retinoid
+    therapy, liver disease and pregnancy among them &mdash; but no guideline specifies
+    an intake below the recommended amount. This app does not diagnose, treat, cure
+    or prevent any disease.</p>
+    <p>Signs worth taking to a doctor: changes in night vision or dry eyes, unusual
+    bruising or bleeding gums, fatigue that deepens rather than lifts, bone pain, or
+    unintended weight loss.</p>
+    <p>If you are pregnant, nursing, feeding a child, or managing a diagnosed
+    condition, speak to a clinician before restricting any nutrient.</p>
+  </div>
+
+  <h2>Contact</h2>
+  <p>Bugs, missing foods, or anything else:
+  <a href="mailto:muratorekevin+lowvitamina@gmail.com">muratorekevin+lowvitamina@gmail.com</a></p>
+  <p>Missing foods are the most useful thing you can send. Include the food and
+  a link to the label or database entry and it goes into the next update.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a> &middot; Low Vitamin A
+  </footer>
+</main>
+</body>
+</html>
